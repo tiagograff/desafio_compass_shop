@@ -3,8 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>compass shop</title>
+    <title>Compass Shop</title>
     <link rel="shortcut icon" type="imagex/png" href="./img/logo.svg" />
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <header class="menu-header">
+    <!-- menu -->
+      <nav class="nav-bar">
+        <div class="header-logo">
+          <a href="https://compass.uol/">
+            <img src="./img/logo.svg" alt="logo da compass shop" />
+            <h1>Compass</h1>
+          </a>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-text-item">
+            <a class="nav-text-link" href="#">Home</a>
+          </li>
+          <li class="nav-text-item">
+            <a class="nav-text-link" href="#">Shop</a>
+          </li class="nav-text-item">
+          <li>
+            <a class="nav-text-link" href="#">About</a>
+          </li>
+          <li class="nav-text-item">
+            <a class="nav-text-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav-icons">
+            <li class="nav-icons-item"><a href="#" class="nav-icons-link"><img class="nav-icons-img" src="./img/icon user.svg" alt="icone de ajuda ao usuário"></a></li>
+            <li class="nav-icons-item"><a href="#" class="nav-icons-link"><img class="nav-icons-img" src="./img/icon lupa.svg" alt="icone de lupa"></a></li>
+            <li class="nav-icons-item"><a href="#" class="nav-icons-link"><img class="nav-icons-img" src="./img/icon like.svg" alt="icone de curtidas"></a></li>
+            <li class="nav-icons-item"><a href="#" class="nav-icons-link"><img class="nav-icons-img" src="./img/icon car.svg" alt="icone de carrinho"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2 class="banner-title">Shop</h2>
+            <p class="banner-text">Home > Shop</p>
+        </div>
+    </section>
+    <!-- filtro -->
+    <section class="filter">
+        <div class="results">
+            <button id="filter-button"><img src="./img/icon filter.svg" alt="icone de filtro">Filter</button>
+            <p class="paragraph-filter">Showing 1-16 of 32 results</p>
+        </div>
+        <div class="filter-show">
+            <button id="show-button">Show</button>
+            <button id="display-button">0</button>
+        </div>
+    </section>
+  </body>
 </html>

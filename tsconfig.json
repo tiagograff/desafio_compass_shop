@@ -1,7 +1,0 @@
-{
-    "compilerOptions": {
-        "rootDir": "./src",
-        "outFile": "./dist/main.js",
-        "target": "ESNext"
-    }
-}

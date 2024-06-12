@@ -1,5 +1,6 @@
 @import url(./menu.css);
 @import url(./variables.css);
+@import url(./banner.css);
 
 *{
     margin: 0;

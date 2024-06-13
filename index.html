@@ -148,13 +148,27 @@
             alt="icone de filtro"
           />Filter
         </button>
-        <p class="paragraph-filter">Showing 1-16 of 32 results</p>
+        <p id="paragraph-filter-show" class="paragraph-filter">
+          Showing 1-16 of 32 results
+        </p>
       </div>
       <div class="filter-show">
-        <button id="show-button">Show</button>
-        <button id="display-button">0</button>
+        <label for="display-button" id="show-button">Show</label>
+        <input id="display-button" value="16" />
+        <button id="submit-show-button">Generate</button>
       </div>
     </section>
+    <main>
+      <section class="cards">
+        <div id="card-id" class="card-content"></div>
+        <div class="pagination">
+          <button id="prev-button" disabled>Previous</button>
+          <span id="page-indicator">Page 1</span>
+          <button id="next-button">Next</button>
+        </div>
+      </section>
+    </main>
+    <script src="./src/cards.js"></script>
     <script src="./src/menu.js"></script>
   </body>
 </html>

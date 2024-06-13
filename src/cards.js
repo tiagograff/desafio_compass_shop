@@ -55,6 +55,11 @@ function updateCards() {
     paragraphFilter.style.color = "red";
     prevButton.disabled = true;
     nextButton.disabled = true;
+  } else if (isNaN(show)) {
+    paragraphFilter.textContent = "This is a letter";
+    paragraphFilter.style.color = "red";
+    prevButton.disabled = true;
+    nextButton.disabled = true;
   }
 }
 

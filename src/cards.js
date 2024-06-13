@@ -1,14 +1,74 @@
+const cardTemplates = [
+  //template 01
+  `   <div class="card">
+      <div class="card-image">
+        <img class="card-image-img" src="./img/image 1.svg" />
+        <span class="card-image-discount">-30%</span>
+      </div>
+      <div class="card-text">
+        <h3 class="card-text-title">Syltherine</h3>
+        <p class="card-text-paragraph">Stylish cafe chair</p>
+        <div class="card-price">
+          <span class="card-price-discount">Rp 2.500.000</span>
+          <span class="card-price-total">Rp 3.500.000</span>
+        </div>
+      </div>
+    </div>`,
+  //template 02
+  `   <div class="card">
+      <div class="card-image">
+        <img class="card-image-img" src="./img/image 2.svg" />
+      </div>
+      <div class="card-text">
+        <h3 class="card-text-title">Leviosa</h3>
+        <p class="card-text-paragraph">Stylish cafe chair</p>
+        <div class="card-price">
+          <span class="card-price-discount">Rp 2.500.000</span>
+        </div>
+      </div>
+    </div>`,
+  //template 03
+  `   <div class="card">
+      <div class="card-image">
+        <img class="card-image-img" src="./img/image 3.svg" />
+        <span class="card-image-discount">-50%</span>
+      </div>
+      <div class="card-text">
+        <h3 class="card-text-title">Lolito</h3>
+        <p class="card-text-paragraph">Luxury big sofa</p>
+        <div class="card-price">
+          <span class="card-price-discount">Rp 7.000.000</span>
+          <span class="card-price-total">Rp 14.000.000</span>
+        </div>
+      </div>
+    </div>`,
+  //template 04
+  `   <div class="card">
+      <div class="card-image">
+        <img class="card-image-img" src="./img/image 4.svg" />
+        <span class="card-image-new">new</span>
+      </div>
+      <div class="card-text">
+        <h3 class="card-text-title">Respira</h3>
+        <p class="card-text-paragraph">Outdoor bar table and stool</p>
+        <div class="card-price">
+          <span class="card-price-discount">Rp 500.000</span>
+        </div>
+      </div>
+    </div>`,
+];
+
 //função para criar um card
-function newCard(num, index) {
+function newCard(index) {
   const card = document.createElement("div");
-  card.classList.add("card", `no${num}`);
-  card.textContent = `Card ${index + 1} (Number ${num})`;
+  card.classList.add("card");
+  card.innerHTML = cardTemplates[index % cardTemplates.length];
   return card;
 }
 
 // armazenamento de paginação
 let currentPage = 1;
-let totalItems = 32;
+const totalItems = cardTemplates.length * 8;
 let itemsPerPage = 16;
 
 //elementos html
@@ -32,8 +92,8 @@ function updateCards() {
 
   //gerando cards e os adcioanando na página
   for (let i = start; i < end && i < totalItems; i++) {
-    const number = (i % 4) + 1;
-    const card = newCard(number, i);
+    const templateIndex = i % cardTemplates.length;
+    const card = newCard(templateIndex);
     cardContent.appendChild(card);
   }
 

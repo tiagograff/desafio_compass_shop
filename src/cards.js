@@ -60,6 +60,9 @@ function updateCards() {
     paragraphFilter.style.color = "red";
     prevButton.disabled = true;
     nextButton.disabled = true;
+  } else {
+    prevButton.disabled = false;
+    nextButton.disabled = false;
   }
 }
 

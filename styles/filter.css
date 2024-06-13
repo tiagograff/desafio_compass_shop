@@ -57,3 +57,38 @@
     padding: 15px 20px;
     color: var(--color-gray);
 }
+
+@media (max-width: 768px) {
+    .results{
+        margin-left: 37px;
+    }
+
+    .filter-show{
+        margin-right: 37px;
+    }
+}
+
+@media (max-width: 585px) {
+    .filter{
+        height: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .results{
+        margin-top: 20px;
+    }
+
+    .filter-show{
+        margin: 0 0 20px 37px;
+    }
+}
+
+@media (max-width: 425px) {
+    #filter-button{
+        margin-right: 0;
+    }
+    .paragraph-filter{
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,80 @@
+@import url(./variables.css);
+
+.footer-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 40px 100px;
+}
+
+.footer-license{
+    padding: 20px 0;
+    width: 100%;
+    border-top: var(--color-gray) 1px solid;
+    margin: 40px 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.title-footer{
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.footer-address-content{
+    width: 285px;
+    color: var(--color-gray);
+}
+
+.links-nav, .help-nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.newsletter-box{
+    margin-bottom: 40px;
+}
+
+.links-nav-ul, .help-nav-ul{
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.links-nav-ul:hover, .help-nav-ul:hover{
+    cursor: s;
+    color: var(--color-gold);
+}
+
+.links-nav-text, .help-nav-text, .newsletter-box-text{
+    color: var(--color-gray);
+}
+
+.newsletter-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display-newslatter{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-black);
+    margin-right: 20px;
+    color: var(--color-gray);
+    width: 200px;
+}
+
+#susbcribe-button{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--color-black);
+    color: var(--color-black);
+}
+
+#susbcribe-button:hover{
+    color: var(--color-gold);
+}

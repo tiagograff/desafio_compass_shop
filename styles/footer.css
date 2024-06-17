@@ -78,3 +78,20 @@
 #susbcribe-button:hover{
     color: var(--color-gold);
 }
+
+@media (max-width: 1024px) {
+   .footer-content{
+    flex-direction: column;
+   }
+}
+
+@media (max-width: 425px) {
+    .newsletter-content{
+        flex-direction: column;
+    }
+
+    #susbcribe-button{
+        margin: 20px 0 0 0;
+    }
+ }
+ 

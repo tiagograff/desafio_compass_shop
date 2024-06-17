@@ -1,5 +1,7 @@
 @import url(./variables.css);
 
+/* menu desktop */
+
 .nav-bar{
     display: flex;
     align-items: center;
@@ -78,6 +80,8 @@
     z-index: 1000;
 }
 
+/* menu hamburguer */
+
 .nav-items-hamburguer,
 .nav-icons-hamburguer {
     display: flex;
@@ -87,7 +91,7 @@
     margin: 20px 0;
 }
 
-/* media queries */
+/* media queries  - responsividade*/
 
 @media (max-width: 1024px) {
     .nav-items,

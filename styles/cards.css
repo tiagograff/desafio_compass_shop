@@ -1,3 +1,5 @@
+/* cards (baseado no template no arquivo javascripr cards.js) */
+
 .card-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,6 +17,8 @@
     justify-content: flex-start;
     margin-bottom: 50px;
 }
+
+/* interatividade */
 
 .card:hover {
     transform: scale(1.05);
@@ -84,6 +88,8 @@
     text-decoration: line-through;
 }
 
+/* paginação */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -107,10 +113,14 @@
     transition: 0.4s;
 }
 
+/* interatividade */
+
 #prev-button:hover, #next-button:hover{
     background-color: var(--color-gold);
     color: var(--color-white);
 }
+
+/* reponsividade */
 
 @media (max-width: 1200px) {
     .card-content{

@@ -1,5 +1,7 @@
 @import url(./variables.css);
 
+/* footer */
+
 .footer-page{
     display: flex;
     flex-direction: column;
@@ -29,6 +31,8 @@
     color: var(--color-gray);
 }
 
+/* coluna link e help */
+
 .links-nav, .help-nav{
     display: flex;
     flex-direction: column;
@@ -43,6 +47,8 @@
     margin-top: 40px;
     cursor: pointer;
 }
+
+/* iteratividade */
 
 .links-nav-ul:hover, .help-nav-ul:hover{
     cursor: s;
@@ -78,6 +84,8 @@
 #subscribe-button:hover{
     color: var(--color-gold);
 }
+
+/* responsividade */
 
 @media (max-width: 1024px) {
    .footer-content{

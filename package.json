@@ -1,0 +1,12 @@
+{
+  "name": "desafio_compass_shop",
+  "version": "1.0.0",
+  "description": "desafio proposto pela compass durante meu período de estágio. com os meus conhecimentos em HTML  e CSS ou React.js e com a linguagem TypeScript ou JavaScript, fazer uma página web intitulada compass shop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -148,6 +148,16 @@
             alt="icone de filtro"
           />Filter
         </button>
+        <div class="filter-sort">
+          <label for="filter-dropdown">Sort by:</label>
+          <select id="filter-dropdown">
+            <option value="none">None</option>
+            <option value="price-low-high">Price (Low-High)</option>
+            <option value="price-high-low">Price (High-Low)</option>
+            <option value="alphabetical-a">Alphabetical (A-Z)</option>
+            <option value="alphabetical-z">Alphabetical (Z-A)</option>
+          </select>
+        </div>
         <p id="paragraph-filter-show" class="paragraph-filter">
           Showing 1-16 of 32 results
         </p>
@@ -222,7 +232,7 @@
         </div>
       </div>
     </section>
-    <script src="./src/cards.js"></script>
     <script src="./src/menu.js"></script>
+    <script src="./src/cards.js"></script>
   </body>
 </html>

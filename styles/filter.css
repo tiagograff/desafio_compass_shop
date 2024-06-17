@@ -85,6 +85,15 @@
     }
 }
 
+.filter-sort {
+    display: none;
+  }
+  
+  .filter-sort.show {
+    display: flex;
+    flex-direction: column;
+  }
+  
 /* @media (max-width: 585px) {
     .filter{
         height: 150px;
